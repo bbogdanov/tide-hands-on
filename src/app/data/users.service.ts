@@ -8,10 +8,10 @@ import {of} from 'rxjs/internal/observable/of';
 })
 export class UsersService {
 
-  getAllUsers: Observable<User[]> = of([{id: 1, name: 'foo', dataOfBirth: new Date()}, {
+  getAllUsers: Observable<User[]> = of([{id: 1, name: 'foo', dateOfBirth: new Date()}, {
     id: 2,
     name: 'foo2',
-    dataOfBirth: new Date()
+    dateOfBirth: new Date()
   }] as User[]);
 
   getOneUser(id: number): Observable<User> {
