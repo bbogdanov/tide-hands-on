@@ -21,9 +21,5 @@ export class AppComponent {
       width: '250px',
       data: user
     });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
   }
 }
